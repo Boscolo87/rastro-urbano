@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .produto, .carrinho {
+    background-color: #1c1c1c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  button {
+    background-color: #e94f1d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff6a3d;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .remover {
+    background-color: crimson;
+  }
+  
+  .remover:hover {
+    background-color: darkred;
+  }
+  
+  .total {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  body {
+    background-color: #1c1c1c;  /* fundo escuro estilo urbano */
+    color: white;               /* cor do texto */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  
+body {
+  background-image: url('rastro.02.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+
+.titulo {
+  text-align: center;
+  color: #ff6600;
+  margin-top: 20px;
+}
+
+.sobre {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  margin: 40px;
+  border-radius: 12px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');
+
+.sobre-rastro {
+  background-color: #111; /* Preto urbano */
+  color: #f5f5f5; /* Cinza claro para contraste */
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 50px auto;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2); /* sombra vermelha sutil */
+}
+
+.sobre-rastro h2 {
+  font-family: 'Anton', sans-serif;
+  color: #ff3c00; /* Laranja/vermelho vibrante */
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sobre-rastro strong {
+  color: #ff3c00;
+}
+
+.sobre-rastro p:last-child {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.titulo-rastro {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4em;
+  text-align: center;
+  color: #ff2600; /* vermelho forte */
+  text-shadow: 2px 2px 8px #000000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+

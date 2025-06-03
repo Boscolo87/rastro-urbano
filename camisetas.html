@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rastro Urbano</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
@@ -23,13 +24,31 @@
     <script>
       new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+    <script>
+      const carrinho = [];
+    
+      function adicionarAoCarrinho(produto) {
+        carrinho.push(produto);
+        atualizarCarrinho();
+      }
+    
+      function atualizarCarrinho() {
+        const lista = document.getElementById('carrinho');
+        lista.innerHTML = '';
+        carrinho.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = item;
+          lista.appendChild(li);
+        });
+      }
+    </script>
 </body>
 
 </html>
 </head>
 
-<body style="background-image:url('1.png');
-              background-image:url('1.png');
+<body style="background-image:url('rastro.02.webp');
+              background-image:url('rastro.02.webp');
 				      background-repeat:no-repeat;
 				      background-attachment:fixed;
 				      background-size:100% 100%;">
@@ -47,12 +66,10 @@
           <li><a class="dropdown-item" href="moletons.html">moletons</a></li>
           <li><a class="dropdown-item" href="calças.html">calças</a></li>
           <li><a class="dropdown-item" href="bonés.html">bonés</a></li>
-          <li><a class="dropdown-item" href="acessórios.html">acessórios</a></li>
+ 
         </ul>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="carrinho.html">carrinho</a>
-      </li>
+   
       <li class="nav-item">
         <a class="nav-link" href="marca.html">marca</a>
       </li>
@@ -63,7 +80,7 @@
           aria-expanded="coleções">coleções</a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="novidades">novidades</a></li>
-          <li><a class="dropdown-item" href="editoral de modas">editoral de modas</a></li>
+     
 
         </ul>
       </li>
@@ -77,15 +94,24 @@
   <br>
   <br>
   <img src="camiseta.1.jpg" width=200 height="200"  alt="">
+    <button onclick="adicionarAoCarrinho('Camiseta Preta')">Adicionar ao carrinho</button>
   <img src="camiseta.2.png" width=200 height="200"  alt="">
+  <button onclick="adicionarAoCarrinho('Camiseta Preta')">Adicionar ao carrinho</button>
   <img src="camiseta.3.avif" width=200 height="200"  alt=""><br>
+  <button onclick="adicionarAoCarrinho('Camiseta Preta')">Adicionar ao carrinho</button>
   <img src="camiseta.4.webp" width=200 height="200"  alt="">
+  <button onclick="adicionarAoCarrinho('Camiseta Preta')">Adicionar ao carrinho</button>
   <img src="camiseta.5.png" width=200 height="200"  alt="">
+  <button onclick="adicionarAoCarrinho('Camiseta Preta')">Adicionar ao carrinho</button>
   <img src="camiseta.6.webp" width=200 height="200"  alt=""><br>
+  <button onclick="adicionarAoCarrinho('Camiseta Preta')">Adicionar ao carrinho</button>
   <img src="camiseta.7.webp" width=200 height="200"  alt="">
+  <button onclick="adicionarAoCarrinho('Camiseta Preta')">Adicionar ao carrinho</button>
   <img src="camiseta.8.jpg" width=200 height="200"  alt="">
+  <button onclick="adicionarAoCarrinho('Camiseta Preta')">Adicionar ao carrinho</button>
   <img src="camiseta.9.webp" width=200 height="200"  alt="">
-  
+  <button onclick="adicionarAoCarrinho('Camiseta Preta')">Adicionar ao carrinho</button>
+
 </body>
 
 </html>
