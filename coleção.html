@@ -1,76 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rastro Urbano</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-</head>
 
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark bg-opacity-75 backdrop-blur shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4" href="loja.html">RASTRO URBANO</a>
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto fw-semibold">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="lojaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Loja
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="lojaDropdown">
+            <li><a class="dropdown-item" href="camisetas.html">Camisetas</a></li>
+            <li><a class="dropdown-item" href="moletons.html">Moletons</a></li>
+            <li><a class="dropdown-item" href="calças.html">Calças</a></li>
+            <li><a class="dropdown-item" href="bonés.html">Bonés</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="marca.html">Marca</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="colecoesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Coleções
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="colecoesDropdown">
+            <li><a class="dropdown-item" href="novidades.html">Novidades</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section class="container my-5">
+  <div class="row justify-content-center g-4">
+    <!-- Card 1 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm image-card" data-bs-toggle="modal" data-bs-target="#modal1">
+        <img src="bone.1.png" class="card-img-top" alt="Calça 1">
       </div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+    <!-- Card 2 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm image-card" data-bs-toggle="modal" data-bs-target="#modal2">
+        <img src="bone.2.jpg" class="card-img-top" alt="Calça 2">
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm image-card" data-bs-toggle="modal" data-bs-target="#modal3">
+        <img src="bone.3.jpg" class="card-img-top" alt="Calça 3">
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm image-card" data-bs-toggle="modal" data-bs-target="#modal4">
+        <img src="bone.4.jpg" class="card-img-top" alt="Calça 4">
+      </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm image-card" data-bs-toggle="modal" data-bs-target="#modal5">
+        <img src="bone.5.png" class="card-img-top" alt="Calça 5">
+      </div>
+    </div>
+    <!-- Card 6 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="card shadow-sm image-card" data-bs-toggle="modal" data-bs-target="#modal6">
+        <img src="bone.6.png" class="card-img-top" alt="Calça 6">
+      </div>
+        
+    </div>
+  </div>
+</section>
+
+
+ 
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-</html>
-</head>
-
-<body style="background-image:url('1.png');
-              background-image:url('1.png');
-				      background-repeat:no-repeat;
-				      background-attachment:fixed;
-				      background-size:100% 100%;">
-
-  <nav>
-    <h1 style="color: rgb(210, 98, 7);text-align: center;">Rastro Urbano</h1>
-    <hr>
-    <ul class="nav">
-      <li class="nav-item">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-          aria-expanded="loja">loja</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="camisetas.html">camisetas</a></li>
-          <li><a class="dropdown-item" href="moletons.html">moletons</a></li>
-          <li><a class="dropdown-item" href="calças.html">calças</a></li>
-          <li><a class="dropdown-item" href="bonés.html">bonés</a></li>
-          <li><a class="dropdown-item" href="acessórios.html">acessórios</a></li>
-        </ul>
-      </li>
-     
-      <li class="nav-item">
-        <a class="nav-link" href="marca.html">marca</a>
-      </li>
-      <li class="nav-item">
-      <li class="nav-item">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-          aria-expanded="coleções">coleções</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="novidades.html">novidades</a></li>
-          <li><a class="dropdown-item" href="editoraldemodas.html">editoral de modas</a></li>
-
-        </ul>
-      </li>
-      </li>
-    </ul>
-    <BR>
-
-
-  </nav>
-</body>
-
 </html>

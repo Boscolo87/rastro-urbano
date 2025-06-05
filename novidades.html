@@ -1,76 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rastro Urbano</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-</head>
-
-<body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-</body>
-
-</html>
-</head>
-
-<body style="background-image:url('1.png');
-              background-image:url('1.png');
-				      background-repeat:no-repeat;
-				      background-attachment:fixed;
-				      background-size:100% 100%;">
-
-  <nav>
-    <h1 style="color: rgb(210, 98, 7);text-align: center;">Rastro Urbano</h1>
-    <hr>
-    <ul class="nav">
-      <li class="nav-item">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-          aria-expanded="loja">loja</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="camisetas.html">camisetas</a></li>
-          <li><a class="dropdown-item" href="moletons.html">moletons</a></li>
-          <li><a class="dropdown-item" href="calças.html">calças</a></li>
-          <li><a class="dropdown-item" href="bonés.html">bonés</a></li>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rastro Urbano – Novidades</title>
+  <div class="voltar-topo text-center my-5">
+    <a href="loja.html" class="btn btn-outline-light btn-lg">
+      ⬅ Voltar para a Página Inicial
+    </a>
+  </div>
   
-        </ul>
-      </li>
-     
-      <li class="nav-item">
-        <a class="nav-link" href="marca.html">marca</a>
-      </li>
-      <li class="nav-item">
-      <li class="nav-item">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-          aria-expanded="coleções">coleções</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="novidades.html">novidades</a></li>
-        
+  <link rel="stylesheet" href="estilo.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-black text-white">
+  <div class="container py-5">
+    <h1 class="text-center mb-5 display-4 fw-bold">🔥 Novidades Rastro Urbano</h1>
 
-        </ul>
-      </li>
-      </li>
-    </ul>
-    <BR>
+    <section class="novidade">
+      <h2 class="mb-3">1. Lançamentos Exclusivos</h2>
+      <p>Produtos limitados com numeração reduzida, como o “Drop #01: Camiseta Grafiteiro”.</p>
+      <div class="alert alert-warning w-50 mx-auto text-center">Contagem Regressiva: <strong id="contador"></strong></div>
+      <p><span class="badge bg-danger">Edição Limitada</span></p>
+    </section>
 
+    <section class="novidade">
+      <h2 class="mb-3">🎨 2. Mural de Artistas</h2>
+      <p>Espaço para artistas de rua mostrarem seus trabalhos com crédito e links para redes sociais.</p>
+    </section>
 
-  </nav>
+    <section class="novidade">
+      <h2 class="mb-3">🛹 3. Blog “Na Rua”</h2>
+      <ul>
+        <li>Histórias do skate e da cultura urbana</li>
+        <li>Entrevistas com artistas e MCs</li>
+        <li>Cobertura de eventos e dicas de estilo urbano</li>
+      </ul>
+    </section>
+
+    <section class="novidade">
+      <h2 class="mb-3">📸 4. Galeria da Comunidade #VistaARua</h2>
+      <p>Fotos de clientes com os produtos da marca, com destaque mensal.</p>
+    </section>
+
+    <section class="novidade">
+      <h2 class="mb-3">🧥 5. Monta o Look</h2>
+      <p>Combinações de peças com filtros por estilo: minimalista, underground, old school etc.</p>
+    </section>
+
+    <section class="novidade">
+      <h2 class="mb-3">📦 6. Outlet da Rua</h2>
+      <p>Peças antigas com desconto e visual grafitado, com tags promocionais chamativos.</p>
+    </section>
+
+    <section class="novidade">
+      <h2 class="mb-3">🎁 7. Caixa Misteriosa</h2>
+      <p>O cliente compra uma surpresa por R$99 e recebe produtos variados. Ótimo para engajamento.</p>
+    </section>
+
+    <section class="novidade">
+      <h2 class="mb-3">📅 8. Calendário de Drops</h2>
+      <p>Organização dos lançamentos por mês, com teasers e nomes criativos para gerar expectativa.</p>
+    </section>
+
+    <section class="novidade">
+      <h2 class="mb-3">🧠 9. Quiz de Estilo</h2>
+      <p>Descubra qual peça combina com seu rolê e receba sugestões com base nas respostas.</p>
+    </section>
+
+    <section class="novidade">
+      <h2 class="mb-3">🌍 10. Responsabilidade Social</h2>
+      <p>Aba “Impacto na Rua” com projetos sociais, oficinas culturais e colaborações com ONGs.</p>
+    </section>
+  </div>
+
+  <script>
+    const dataFinal = new Date("2025-06-10T00:00:00").getTime();
+    const contador = document.getElementById("contador");
+
+    const atualizarContagem = () => {
+      const agora = new Date().getTime();
+      const diferenca = dataFinal - agora;
+
+      const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+      const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+      contador.textContent = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+    };
+
+    setInterval(atualizarContagem, 1000);
+  </script>
 </body>
-
 </html>
